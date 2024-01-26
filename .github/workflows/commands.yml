@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: send a warning
-      run: echo warning!!!
+      run: echo "::warning file=app.js,line=1,col=5,endColumn=7::Missing semicolon"
