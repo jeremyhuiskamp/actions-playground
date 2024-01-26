@@ -1,0 +1,11 @@
+name: workflow commands
+on: push
+
+jobs:
+  warn:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Containerized Build
+      uses: ./.github/actions/my-container-action
