@@ -2,7 +2,7 @@ name: local dockerized action
 on: push
 
 jobs:
-  warn:
+  hello-from-docker:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
