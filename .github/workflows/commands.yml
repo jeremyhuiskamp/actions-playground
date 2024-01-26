@@ -1,0 +1,9 @@
+name: workflow commands
+on: push
+
+jobs:
+  warn:
+    runs-on: ubuntu-latest
+    steps:
+    - name: send a warning
+      run: echo warning!!!
