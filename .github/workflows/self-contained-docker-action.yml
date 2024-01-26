@@ -1,4 +1,4 @@
-name: workflow commands
+name: local dockerized action
 on: push
 
 jobs:
