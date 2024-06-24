@@ -1,0 +1,9 @@
+name: experiment with calling reusable workflows in another repository
+
+on: workflow_dispatch
+
+jobs:
+  hello:
+    # not allowed:
+    uses: jeremyhuiskamp/actions-playground2/hello_workflow.yaml@main
+    
