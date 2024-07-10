@@ -17,6 +17,7 @@ on:
 jobs:
   restart-service:
     runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
     steps:
       - name: restart-service
         run: echo pretending to restart deployment ${{ inputs.deployment }} in ${{ inputs.environment }}
