@@ -1,0 +1,22 @@
+on:
+  workflow_dispatch:
+    inputs:
+      deployment:
+        description: 'Which deployment to restart'
+        required: true
+        type: choice
+        options:
+          - service-one
+          - service-two
+          - service-three
+      environment:
+        description: 'Which environment to restart the deployment in'
+        required: true
+        type: environment
+
+jobs:
+  restart-service:
+    runs-on: ubuntu-latest
+    steps:
+      - name: restart-service
+        run: echo pretending to restart deployment ${{ inputs.deployment }} in ${{ inputs.environment }}
